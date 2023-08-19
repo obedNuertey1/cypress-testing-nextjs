@@ -99,8 +99,36 @@ The documentation serves as a knowledge repository for future developers, tester
   - Operating System: Next.js is compatible with Windows, macOS, and Linux.
 
 ***Environments***:
-- 
-
+- ***Staging***:
+  - Open this folder in vscode.
+  - In the current directory type the following command;
+	```bash
+	npm install
+	```
+	Or
+	```bash
+	yarn install
+	```
+	To install all dependencies.
+  - Type the following command install Cypress as a ***dev*** dependency: 
+   ```bash
+   npm install cypress --save-dev
+   ```
+   Or
+   ```bash
+   yarn install cypress --save-dev
+   ```
+- ***Development Environment***:
+    - To use cypress for E2E testing you need to start the development environment.
+    - To start the development environment you type the command 
+     ```bash
+	 npm run dev
+     ```
+	 OR
+     ```bash
+	 yarn run dev
+     ```
+	 
 ## Conclusion
 
 This technical documentation provides a comprehensive overview of the testing process for [Web Application Name]. It covers various testing phases, strategies, and methodologies to ensure the application's quality and reliability. By following the guidelines outlined in this documentation, the testing team can effectively identify and rectify defects, ensuring a seamless user experience.
