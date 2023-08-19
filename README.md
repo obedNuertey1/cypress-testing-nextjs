@@ -14,17 +14,19 @@
 3. [**Testing Strategy**](#testing-strategy)
    - [Testing Types](#testing-types)
    - [Test Levels](#test-levels)
-   - [Testing Methodologies (Manual, Automated, Combination)](#testing-methodologies-(manual,-automated,-combination))
+   - [Testing Methodology](#testing-methodology)
 
 4. [**Test Cases and Scenarios**](#test-cases-and-scenarios)
-   - [Test Case ID](#test-case-id)
+   - [E2E Testing](#e2e-testing)
+   - [Component Testing](#component-testing)
+   <!--- [Test Case ID](#test-case-id)
    - [Test Objective](#test-objective)
    - [Pre-conditions](#pre-conditions)
    - [Test Steps](#test-steps)
    - [Expected Results](#expected-results)
    - [Actual Results](#actual-results)
    - [Status (Pass/Fail)](#status-(pass/fail))
-   - [Comments](#comments)
+   - [Comments](#comments)-->
 
 5. [**Test Data**](#test-data)
    - [Sample Data Sets](#sample-data-sets)
@@ -49,7 +51,7 @@
    - [Performance Metrics](#performance-metrics)
    - [Performance Improvement Recommendations](#performance-improvement-recommendations)
 
-9. [**Usability Testing**](#usability-testing)
+9.  [**Usability Testing**](#usability-testing)
    - [User Experience Evaluation](#user-experience-evaluation)
    - [User Interface Consistency](#user-interface-consistency)
    - [Accessibility Testing](#accessibility-testing)
@@ -135,6 +137,20 @@ The documentation serves as a knowledge repository for future developers, tester
   - The two main testing types we are going to be implementing are: (Black Box testing), (White Box testing).
 - #### Test Levels:
   - E2E Testing and Component Testing.
+- #### Testing Methodology:
+  - In testing the web application, we first start the Cypress Server by opening a new command line and typing the following command in the command line `npx cypress open`
+  - After a while you should see the following window opened: 
+  ![Alt text](image.png)
+
+## Test Cases and Scenarios
+  - ### E2E Testing
+    - For E2E testing we click part circled with red:
+     ![Alt text](image-1.png)
+	 - You will get another window where you'll be asked to choose a browser as your testing environment we will choose chrome for now:
+  
+        ![Alt text](image-2.png)
+  - ### Component Testing
+    
 ## Conclusion
 
 This technical documentation provides a comprehensive overview of the testing process for [Web Application Name]. It covers various testing phases, strategies, and methodologies to ensure the application's quality and reliability. By following the guidelines outlined in this documentation, the testing team can effectively identify and rectify defects, ensuring a seamless user experience.
