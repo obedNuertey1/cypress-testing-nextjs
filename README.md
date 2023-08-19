@@ -1,82 +1,22 @@
 # cypress_testing_nextjsapp Testing Documentation With Cypress
 
 ## Table of Contents
-[Jest testing for React Crash Course](#jest-testing-for-react-crash-course)
-1. [**Introduction**](#introduction)
-   - [Purpose](#purpose)
-   - [Scope](#scope)
-   - [Audience](#audience)
-
-2. [**Testing Environment**](#testing-environment)
-   - [Requirements](#requirements)
-   - [Environments](#environments)
-
-3. [**Testing Strategy**](#testing-strategy)
-   - [Testing Types](#testing-types)
-   - [Test Levels](#test-levels)
-   - [Testing Methodology](#testing-methodology)
-
-4. [**Test Cases and Scenarios**](#test-cases-and-scenarios)
-   - [E2E Testing](#e2e-testing)
-   - [Component Testing](#component-testing)
-   <!--- [Test Case ID](#test-case-id)
-   - [Test Objective](#test-objective)
-   - [Pre-conditions](#pre-conditions)
-   - [Test Steps](#test-steps)
-   - [Expected Results](#expected-results)
-   - [Actual Results](#actual-results)
-   - [Status (Pass/Fail)](#status-(pass/fail))
-   - [Comments](#comments)-->
-
-5. [**Test Data**](#test-data)
-   - [Sample Data Sets](#sample-data-sets)
-   - [Data Preparation Process](#data-preparation-process)
-   - [Data Management](#data-management)
-
-6. [**Test Execution**](#test-execution)
-   - [Test Execution Schedule](#test-execution-schedule)
-   - [Testing Process](#testing-process)
-   - [Bug Reporting Process](#bug-reporting-process)
-   - [Regression Testing](#regression-testing)
-
-7. [**Automation Testing**](#automation-testing)
-   - [Automation Framework](#automation-framework)
-   - [Test Scripts](#test-scripts)
-   - [Test Script Execution](#test-script-execution)
-   - [Continuous Integration (CI) Integration](#continuous-integration-(ci)-integration)
-
-8. [**Performance Testing**](#performance-testing)
-   - [Load Testing](#load-testing)
-   - [Stress Testing](#stress-testing)
-   - [Performance Metrics](#performance-metrics)
-   - [Performance Improvement Recommendations](#performance-improvement-recommendations)
-
-9.  [**Usability Testing**](#usability-testing)
-   - [User Experience Evaluation](#user-experience-evaluation)
-   - [User Interface Consistency](#user-interface-consistency)
-   - [Accessibility Testing](#accessibility-testing)
-
-10. [**Security Testing**](#security-testing)
-    - [Vulnerability Assessment](#vulnerability-assessment)
-    - [Authentication and Authorization Testing](#authentication-and-authorization-testing)
-    - [Data Security](#data-security)
-    - [Threat Modeling](#threat-modeling)
-
-11. [**Release and Deployment**](#release-and-deployment)
-    - [Testing Checklist](#testing-checklist)
-    - [Deployment Process](#deployment-process)
-    - [Rollback Plan](#rollback-plan)
-
-12. [**Test Summary**](#test-summary)
-    - [Test Coverage](#test-coverage)
-    - [Defect Density](#defect-density)
-    - [Testing Metrics](#testing-metrics)
-    - [Lessons Learned](#lessons-learned)
-
-13. [**Appendices**](#appendices)
-    - [Glossary](#glossary)
-    - [Abbreviations](#abbreviations)
-    - [References](#references)
+- [cypress\_testing\_nextjsapp Testing Documentation With Cypress](#cypress_testing_nextjsapp-testing-documentation-with-cypress)
+	- [Table of Contents](#table-of-contents)
+	- [Introduction](#introduction)
+		- [Purpose](#purpose)
+		- [Scope](#scope)
+		- [Audience](#audience)
+		- [Testing Environment](#testing-environment)
+			- [Requirements:](#requirements)
+			- [Environments:](#environments)
+		- [Testing Strategy](#testing-strategy)
+	- [Test Cases and Scenarios](#test-cases-and-scenarios)
+	- [Conclusion](#conclusion)
+	- [Getting Started](#getting-started)
+	- [Learn More](#learn-more)
+	- [Deploy on Vercel](#deploy-on-vercel)
+ 
 
 
 ## Introduction
@@ -146,15 +86,58 @@ The documentation serves as a knowledge repository for future developers, tester
   - ### E2E Testing
     - For E2E testing we click part circled with red:
      ![Alt text](image-1.png)
-	 - You will get another window where you'll be asked to choose a browser as your testing environment we will choose chrome for now:
+	 - You will get another window where you'll be asked to choose a browser and click on "Start E2E Testing in Chrome" as your testing environment we will choose chrome for now:
   
-        ![Alt text](image-2.png)
-  - ### Component Testing
+        ![Alt text](image-3.png)
+	- Result:
+	 ![Alt text](image-4.png)
+    - Now as you can see we already have some tests. But to write tests locate and click the button called "new spec". This is what pops up next: 
     
+    	![Alt text](image-5.png) 
+	- Click on the create new spec button to create an new spec/test we are going create the spec fundamentals: 
+       ![Alt text](image-6.png)
+	- Now in our fundamentals.cy.js folder, we can see several code snippets. I will explain each of them:
+      ![Alt text](image-7.png)
+
+	  - describe(): Is a Mocha suite function
+        which describes a "suite" with two arguments a title and callback function containing may contain nested suites(describe) and or it() functions.
+      - it(): Is an equivalence to the Mocha test function. It takes two arguments with the first being a string which describes the test cases and the second which is a callback function which contain the 'cy' api for assertions.
+      - cy api: The cy api is used for assertions by chaining it with other methods which comes along with cypress such as the get method which gets a css selector for it to be asserted.
+  	> For more information check the [cypress documentation](https://docs.cypress.io/api/table-of-contents)
+
+Only available when invoked via the mocha CLI. 
+  - ### Component Testing
+    - For component testing follow the following steps by clicking on the parts marked with red ink:
+       ![Alt text](image-8.png)
+
+  	   Next
+
+	   ![Alt text](image-9.png)
+
+	   Next 
+
+	   ![Alt text](image-11.png)
+
+	   Next
+
+	   ![Alt text](image-13.png)
+
+	   Next
+
+	   ![Alt text](image-14.png)
+	- Writing our component tests:
+ 
+    	![Alt text](image-15.png)
+	- Remarks: Every concept in E2E testing can be extended here. I will explain a few things in the component testing.
+    	- mount(): It takes a component as an argument.
+    	- within(): It takes a callback as an argument to access the nested element within an html element.
+    	> For more information on this check out the [cypress documentation](https://docs.cypress.io/api/table-of-contents) 
 ## Conclusion
 
-This technical documentation provides a comprehensive overview of the testing process for [Web Application Name]. It covers various testing phases, strategies, and methodologies to ensure the application's quality and reliability. By following the guidelines outlined in this documentation, the testing team can effectively identify and rectify defects, ensuring a seamless user experience.
-
+This technical documentation provides a comprehensive overview of the testing process for cypress_testing_nextjsapp. It covers various testing phases, strategies, and methodologies to ensure the application's quality and reliability. By following the guidelines outlined in this documentation, the testing team can effectively identify and rectify defects, ensuring a seamless user experience.
+***
+***
+***
 
 
 
