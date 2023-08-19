@@ -8,13 +8,12 @@
    - [Audience](#audience)
 
 2. [**Testing Environment**](#testing-environment)
-   - [System Architecture](#system-architecture)
-   - [Hardware and Software Requirements](#hardware-and-software-requirements)
-   - [Test Environments (Development, Staging, Production)](#test-environments-(development,-staging,-production))
+   - [Requirements](#requirements)
+   - [Environments](#environments)
 
 3. [**Testing Strategy**](#testing-strategy)
-   - [Testing Types (Functional, Usability, Performance, Security, etc.)](#testing-types-(functional,-usability,-performance,-security,-etc.))
-   - [Test Levels (Unit, Integration, System, Acceptance)](#test-levels-(unit,-integration,-system,-acceptance))
+   - [Testing Types](#testing-types)
+   - [Test Levels](#test-levels)
    - [Testing Methodologies (Manual, Automated, Combination)](#testing-methodologies-(manual,-automated,-combination))
 
 4. [**Test Cases and Scenarios**](#test-cases-and-scenarios)
@@ -88,7 +87,7 @@ In this documentation we focus on two main testing techniques used to test web a
 The documentation serves as a knowledge repository for future developers, testers, and team members who can reference it to understand the testing history, methodologies, and outcomes of using **Cypress** for software testing.
 
 ### Testing Environment
-***Requirements***:
+#### Requirements:
 - Cypress:
   - Node.js: Cypress is a Node.js tool, so you need to have Node.js installed on your system.
   - Operating System: Cypress supports Windows, macOS, and Linux.
@@ -98,7 +97,7 @@ The documentation serves as a knowledge repository for future developers, tester
   - npm or Yarn: npm (Node Package Manager) is included with Node.js, or you can use Yarn as an alternative package manager.
   - Operating System: Next.js is compatible with Windows, macOS, and Linux.
 
-***Environments***:
+#### Environments:
 - ***Staging***:
   - Open this folder in vscode.
   - In the current directory type the following command;
@@ -128,7 +127,14 @@ The documentation serves as a knowledge repository for future developers, tester
      ```bash
 	 yarn run dev
      ```
-	 
+- ***Production***:
+  - Make sure the production server is running open the following URL in the webpage [http://localhost:3000](#http://localhost:3000)
+  
+### Testing Strategy
+- #### Testing Types:
+  - The two main testing types we are going to be implementing are: (Black Box testing), (White Box testing).
+- #### Test Levels:
+  - E2E Testing and Component Testing.
 ## Conclusion
 
 This technical documentation provides a comprehensive overview of the testing process for [Web Application Name]. It covers various testing phases, strategies, and methodologies to ensure the application's quality and reliability. By following the guidelines outlined in this documentation, the testing team can effectively identify and rectify defects, ensuring a seamless user experience.
